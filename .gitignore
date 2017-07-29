@@ -11,3 +11,9 @@ npm-debug.log
 yarn-error.log
 .env
 composer.lock
+package-lock.json
+
+/public/js/build
+/public/css/build
+/public/img/build
+/public/fonts/build
