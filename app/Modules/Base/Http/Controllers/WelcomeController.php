@@ -17,4 +17,9 @@ class WelcomeController extends Controller
     {
         return $this->view("base::welcome");
     }
+
+    public function getModal()
+    {
+        return $this->view("base::modal");
+    }
 }

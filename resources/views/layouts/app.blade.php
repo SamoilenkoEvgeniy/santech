@@ -37,7 +37,9 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    &nbsp;
+                    @if(\Auth::user() && \Auth::user()->hasRole("administrator"))
+                        <li><a href="{{ url('/admin/crud/settings') }}">Настройки системы</a></li>
+                    @endif
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -45,7 +47,6 @@
                     <!-- Authentication Links -->
                     @if (Auth::guest())
                         <li><a href="{{ route('login') }}">Login</a></li>
-                        <li><a href="{{ route('register') }}">Register</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -73,8 +74,9 @@
             </div>
         </div>
     </nav>
-
-    @yield('content')
+    <div class="container">
+        @yield('content')
+    </div>
 </div>
 
 <!-- Scripts -->

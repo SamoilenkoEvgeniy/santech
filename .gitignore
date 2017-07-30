@@ -17,3 +17,5 @@ package-lock.json
 /public/css/build
 /public/img/build
 /public/fonts/build
+
+_ide_helper.php
