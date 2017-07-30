@@ -2,6 +2,7 @@
 
 Route::group([], function () {
     Route::get('/getModal', "WelcomeController@getModal");
+    Route::post('/submitOrder', "WelcomeController@submitOrder");
     Route::get('/', "WelcomeController@index");
 });
 

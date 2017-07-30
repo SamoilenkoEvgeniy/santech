@@ -5,7 +5,7 @@ function sent_form() {
         s = $(".button_area"),
         n = "<div class='text_order'>Спасибо за вызов!</div>";
     return $.ajax({
-        url: "/connectors/custom/hOrder.php",
+        url: "/submitOrder",
         type: "post",
         data: e,
         success: function (t) {
