@@ -3,8 +3,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
     <meta name="yandex-verification" content="fef03c45191adb27"/>
-    <meta name="description" content="Услуги сантехника в Ставрополе">
-    <title>Услуги сантехника в Ставрополе</title>
+    <meta name="description" content="Сантехник в Ставрополе">
+    <title>Сантехник в Ставрополе</title>
     <base href="{{ env("APP_URL") }}"/>
     <link href='{{ url("/css/build/vendor.css") }}' rel='stylesheet' type='text/css'/>
     {{--
@@ -35,10 +35,6 @@
                     </div>
                     <div class="contacts_address">{{ \App\Modules\Base\Models\Setting::findByKey("address") }}</div>
                 </div>
-
-                <ul class="menu">
-                    <li class="last"><a href="{{ url("services") }}">Услуги</a></li>
-                </ul>
 
                 <div class="button_area">
                     <div class="text_order" id='order' onclick="yaCounter27173903.reachGoal('order'); return true;">
