@@ -58,52 +58,7 @@
                 @yield("content")
             </div>
         </div>
-
-        <div class="container services_main_block">
-            <div class="row">
-                <div class="col-4">
-                    <div class="services_main_block__item"
-                         style="background: url('/img/build/main_services/d.png') no-repeat; background-size: cover">
-                        <div class="overlay"></div>
-                        <h3>
-                            test
-                        </h3>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="services_main_block__item"
-                         style="background: url('/img/build/main_services/o.png') no-repeat; background-size: cover">
-                        <div class="overlay"></div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="services_main_block__item"
-                         style="background: url('/img/build/main_services/p.png') no-repeat; background-size: cover">
-                        <div class="overlay"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 2%;">
-                <div class="col-4">
-                    <div class="services_main_block__item"
-                         style="background: url('/img/build/main_services/r.png') no-repeat; background-size: cover">
-                        <div class="overlay"></div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="services_main_block__item"
-                         style="background: url('/img/build/main_services/s.png') no-repeat; background-size: cover">
-                        <div class="overlay"></div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="services_main_block__item"
-                         style="background: url('/img/build/main_services/u.png') no-repeat; background-size: cover">
-                        <div class="overlay"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @yield("after_content")
     </div>
     <div class='footer'>
         <div class="in">
@@ -111,7 +66,7 @@
         </div>
     </div>
 </div>
-@if(env("APP_METRIKA"))
+@if(env("APP_METRIKA", true))
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (d, w, c) {

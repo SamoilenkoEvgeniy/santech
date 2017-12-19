@@ -2,6 +2,7 @@
 
 namespace App\Modules\Base\Http\Controllers;
 
+use App\Modules\Content\Models\Service;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -13,7 +14,10 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        return $this->view("base::welcome");
+        $services = Service::all();
+        return $this->view("base::welcome", [
+            "services" => $services
+        ]);
     }
 
     public function getModal()

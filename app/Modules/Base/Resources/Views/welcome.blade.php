@@ -46,3 +46,25 @@
         </p>
     </div>
 @endsection
+
+@section("after_content")
+    <div class="container services_main_block">
+        <div class="row">
+            @foreach($services as $service)
+                @if($loop->iteration % 4 === 0)
+        </div>
+        <div class="row">
+            @endif
+            <div class="col-4">
+                <div class="services_main_block__item"
+                     style="background: url('{{ $service->image  }}') no-repeat; background-size: cover">
+                    <div class="overlay"></div>
+                    <h3>
+                        {{ $service->name }}
+                    </h3>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+@endsection

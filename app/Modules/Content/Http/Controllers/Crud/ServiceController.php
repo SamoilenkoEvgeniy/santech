@@ -78,6 +78,10 @@ class ServiceController extends Controller
         return response()->redirectTo($this->base_url);
     }
 
+    /**
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function delete($id)
     {
         $service = Service::find($id);
