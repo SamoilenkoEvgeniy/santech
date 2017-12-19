@@ -57,8 +57,7 @@ a img {
 }
 
 .header .logo {
-  width: 437px;
-  float: left;
+  /*width: 437px;*/
   margin-top: 5px;
 }
 
@@ -74,14 +73,15 @@ a img {
 }
 
 .header .contacts {
-  width: 437px;
-  float: left;
-  margin: 15px 0 0 4px;
+  /*width: 437px;*/
+  margin: 15px 0 4px 0;
 }
 
 .header .contacts .contacts_phone {
   text-align: right;
   font-size: 35px;
+  padding-top: 9px;
+  line-height: 40px;
   color: #262626;
 }
 
@@ -89,7 +89,6 @@ a img {
   text-align: right;
   font-size: 16px;
   color: #262626;
-  margin-top: 9px;
 }
 
 .header .menu {
@@ -128,11 +127,9 @@ a img {
   width: 221px;
   height: 44px;
   background: #01aeff;
+  float: right;
   cursor: pointer;
   z-index: 999;
-  position: absolute;
-  right: 52px;
-  top: 144px;
 }
 
 .header .button_area .text_order {
@@ -422,5 +419,23 @@ a img {
 .shadow {
   width: 980px;
   margin: auto;
-  box-shadow: 0px 10px 33px 1px #000;
+  box-shadow: 0 10px 33px 1px #000;
+}
+
+.services_main_block {
+  margin-top: 48px;
+}
+
+.services_main_block__item {
+  height: 258px;
+  position: relative;
+  cursor: pointer;
+}
+
+.services_main_block__item .overlay {
+  background: #000;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }

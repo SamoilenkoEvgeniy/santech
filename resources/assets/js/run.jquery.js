@@ -22,6 +22,7 @@ function sent_form() {
 }
 
 $(window).ready(function () {
+
     $("#slider").owlCarousel({
         autoPlay: 8e3,
         navigation: !1,
@@ -30,7 +31,10 @@ $(window).ready(function () {
         prev: "",
         next: "",
         pagination: !1
-    }), $("#phone").mask("+7(999)999-99-99");
+    });
+
+    $("#phone").mask("+7(999)999-99-99");
+
     var t = $("#order"),
         e = "#order",
         o = ({
@@ -45,6 +49,7 @@ $(window).ready(function () {
             box_shadow: "0px 2px 10px 1px rgba(0,0,0, 0.55)",
             background: "#fff"
         });
+
     $("body").delegate(e, "click", function () {
         t = $(this), $(this).parent().animate({
             width: o.width,
@@ -58,7 +63,18 @@ $(window).ready(function () {
                 alert("Ошибка! Сервер временно недоступен!")
             }
         })
-    }), $("body").delegate(".close", "click", function () {
+    });
+
+    $("body").delegate(".close", "click", function () {
         $(".button_area").removeAttr("style").html("<div class='text_order' id='order'>Вызов сантехника</div>")
-    })
+    });
+
+    $(".services_main_block__item").hover(function () {
+        var that = $(this);
+        that.find(".overlay").first().fadeOut(100);
+    }, function () {
+        var that = $(this);
+        that.find(".overlay").first().fadeIn(100);
+    });
+
 });

@@ -3,19 +3,18 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     csso = require('gulp-csso'),
+    sass = require('gulp-sass'),
     image = require('gulp-image'),
-    source_path = {
-        "scss": "/resources/assets/scss/*.scss"
-    },
     build_path = {
         "scss": './public/css/build',
         "js": './public/js/build',
         "images": './public/img/build',
-        "fonts": './public/fonts/build',
+        "fonts": './public/fonts/build'
     };
 
 gulp.task('css:vendor', function () {
     return gulp.src([
+        "./node_modules/bootstrap/dist/css/bootstrap.css",
         "./resources/assets/sass/layout.scss",
         "./node_modules/owl.carousel/dist/assets/owl.carousel.css",
         "./node_modules/owl.carousel/dist/assets/owl.theme.default.css"
@@ -38,6 +37,9 @@ gulp.task('js', function () {
 });
 
 gulp.task('image', function () {
+    gulp.src('./resources/assets/img/*/*')
+        .pipe(image())
+        .pipe(gulp.dest(build_path.images));
     gulp.src('./resources/assets/img/*')
         .pipe(image())
         .pipe(gulp.dest(build_path.images));

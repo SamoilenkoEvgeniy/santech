@@ -19,6 +19,7 @@
                                 </div>
                                 <div class="pull-right">
                                     <a href="{{ url($base_url."/edit/".$service->id) }}" class="btn btn-primary">Редактировать</a>
+                                    <a href="{{ url($base_url."/delete/".$service->id) }}" class="btn btn-danger">Удалить</a>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
