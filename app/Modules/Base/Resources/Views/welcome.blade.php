@@ -60,7 +60,7 @@
                      style="background: url('{{ $service->image  }}') no-repeat; background-size: cover">
                     <div class="overlay"></div>
                     <h3>
-                        {{ $service->name }}
+                        <a href="/services/{{ $service->slug }}">{{ $service->header }}</a>
                     </h3>
                 </div>
             </div>

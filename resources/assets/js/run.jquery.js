@@ -71,10 +71,13 @@ $(window).ready(function () {
 
     $(".services_main_block__item").hover(function () {
         var that = $(this);
-        that.find(".overlay").first().fadeOut(100);
+        that.find("h3").first().fadeIn(100);
+        that.find(".overlay").first().stop(true,true).addClass("slow", 500);
+
     }, function () {
         var that = $(this);
-        that.find(".overlay").first().fadeIn(100);
+        that.find("h3").first().fadeOut(100);
+        that.find(".overlay").first().stop(true,true).removeClass("slow", 500);
     });
 
 });

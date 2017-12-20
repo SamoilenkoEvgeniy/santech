@@ -5,6 +5,11 @@ var gulp = require('gulp'),
     csso = require('gulp-csso'),
     sass = require('gulp-sass'),
     image = require('gulp-image'),
+
+    source_path = {
+        "scss": "./resources/assets/scss/*.scss",
+        "js": "./resources/assets/js/*.js",
+    },
     build_path = {
         "scss": './public/css/build',
         "js": './public/js/build',
@@ -15,7 +20,6 @@ var gulp = require('gulp'),
 gulp.task('css:vendor', function () {
     return gulp.src([
         "./node_modules/bootstrap/dist/css/bootstrap.css",
-        "./resources/assets/sass/layout.scss",
         "./node_modules/owl.carousel/dist/assets/owl.carousel.css",
         "./node_modules/owl.carousel/dist/assets/owl.theme.default.css"
     ])
@@ -45,6 +49,14 @@ gulp.task('image', function () {
         .pipe(gulp.dest(build_path.images));
 });
 
+
+gulp.task('sass', function () {
+    return gulp.src(source_path.scss)
+        .pipe(sass.sync().on('error', sass.logError))
+        .pipe(csso())
+        .pipe(gulp.dest(build_path.scss));
+});
+
 gulp.task('fonts', function () {
     return gulp.src([
         './resources/assets/fonts/*'
@@ -63,6 +75,10 @@ gulp.task('prefixer', function () {
         .pipe(gulp.dest('dist'))
 });
 
+gulp.task('watch', function () {
+    gulp.watch(source_path.scss, ['sass', "js"]);
+});
+
 // DEFAULT
 gulp.task('default', [
     'js',
@@ -76,6 +92,7 @@ gulp.task('build', [
     "fonts",
     "image",
     "css:vendor",
+    "sass",
     'prefixer',
     'js'
 ]);

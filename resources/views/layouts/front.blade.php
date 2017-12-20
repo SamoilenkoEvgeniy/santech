@@ -7,6 +7,7 @@
     <title>Сантехник в Ставрополе</title>
     <base href="{{ env("APP_URL") }}"/>
     <link href='{{ url("/css/build/vendor.css") }}' rel='stylesheet' type='text/css'/>
+    <link href='{{ url("/css/build/layout.css") }}' rel='stylesheet' type='text/css'/>
     {{--
 
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>

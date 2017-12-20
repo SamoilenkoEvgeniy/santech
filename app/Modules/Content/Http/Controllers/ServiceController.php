@@ -17,4 +17,16 @@ class ServiceController extends Controller
             "services" => $services
         ]);
     }
+
+    /**
+     * @param $slug
+     * @return \Illuminate\Http\Response
+     */
+    public function show($slug)
+    {
+        $service = Service::where("slug", $slug)->first();
+        return $this->view("content::services.front.show", [
+            "service" => $service
+        ]);
+    }
 }
