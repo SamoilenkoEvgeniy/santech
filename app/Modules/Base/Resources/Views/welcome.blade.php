@@ -62,6 +62,9 @@
                     <h3>
                         <a href="/services/{{ $service->slug }}">{{ $service->header }}</a>
                     </h3>
+                    <div class="name">
+                        {{ $service->header }}
+                    </div>
                 </div>
             </div>
             @endforeach

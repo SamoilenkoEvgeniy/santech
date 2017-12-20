@@ -72,11 +72,13 @@ $(window).ready(function () {
     $(".services_main_block__item").hover(function () {
         var that = $(this);
         that.find("h3").first().fadeIn(100);
+        that.find(".name").first().fadeOut(50);
         that.find(".overlay").first().stop(true,true).addClass("slow", 500);
 
     }, function () {
         var that = $(this);
         that.find("h3").first().fadeOut(100);
+        that.find(".name").first().fadeIn(50);
         that.find(".overlay").first().stop(true,true).removeClass("slow", 500);
     });
 
