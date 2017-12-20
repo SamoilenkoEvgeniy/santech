@@ -370,20 +370,22 @@ a img {
   color: #000;
 }
 
-.services {
-}
-
-.services .service {
+.service {
   padding: 10px 0 10px 0;
-}
+  h3 {
+    margin: 8px 0 38px 0;
+    a {
+      color: #000;
+    }
+  }
 
-.services .service h3 {
-  font-size: 20px;
-  margin: 8px 0 8px 0;
-}
-
-.services .service h3 a {
-  color: #000;
+  h4 {
+    margin: 58px 0 38px 0;
+    text-align: center;
+    a {
+      color: #000;
+    }
+  }
 }
 
 .article_page {
@@ -441,9 +443,22 @@ a img {
       bottom: 0;
       text-align: center;
       width: 100%;
-
       background: #000;
-      opacity: 0.5;
+      opacity: 0.4;
+      height: 16%;
+      z-index: 1;
+    }
+
+    .name_text {
+      position: absolute;
+      bottom: 2%;
+      z-index: 12;
+
+      text-align: center;
+      width: 100%;
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: bold;
     }
 
     h3 {
@@ -454,8 +469,14 @@ a img {
       width: 100%;
       top: 25%;
       display: none;
+
       a {
         color: #ffffff;
+      }
+
+      p {
+        font-size: 14px;
+        margin-top: 12px;
       }
 
     }

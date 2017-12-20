@@ -42,7 +42,7 @@
             Дайте мне знать о вашей проблеме - и я решу её!
         </p>
         <p>
-            Мы работаем без протечек!
+            Я работаю без протечек!
         </p>
     </div>
 @endsection
@@ -61,8 +61,14 @@
                     <div class="overlay"></div>
                     <h3>
                         <a href="/services/{{ $service->slug }}">{{ $service->header }}</a>
+                        <p style="font-size: 18px;">
+                            {!! $service->preview_text !!}
+                        </p>
                     </h3>
+
                     <div class="name">
+                    </div>
+                    <div class="name_text">
                         {{ $service->header }}
                     </div>
                 </div>
