@@ -3,8 +3,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
     <meta name="yandex-verification" content="fef03c45191adb27"/>
-    <meta name="description" content="Сантехник в Ставрополе">
-    <title>Сантехник в Ставрополе</title>
+    <meta name="description" content="@yield("description")"/>
+    <title>@yield("title")</title>
     <base href="{{ env("APP_URL") }}"/>
     <link href='{{ url("/css/build/vendor.css") }}' rel='stylesheet' type='text/css'/>
     <link href='{{ url("/css/build/layout.css") }}' rel='stylesheet' type='text/css'/>
