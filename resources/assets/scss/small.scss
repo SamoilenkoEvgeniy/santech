@@ -1,0 +1,119 @@
+#wrapper {
+  min-height: 1000px;
+  overflow: hidden;
+  margin: 0 0 -242px 0;
+  background: #fff;
+}
+
+#wrapper:after {
+  content: "";
+  display: block;
+  height: 242px;
+}
+
+.in {
+  width: 740px;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  height: 200px;
+  width: 100%;
+}
+
+.header .in {
+  width: 878px;
+  background: #ffffff;
+  margin: auto;
+  height: 180px;
+  padding: 33px 52px 0 50px;
+}
+
+.header .in a {
+  text-decoration: none;
+}
+
+.header .logo {
+  margin-top: 5px;
+}
+
+.header .logo .logo_text {
+  font-size: 47px;
+  color: #1f52a2;
+}
+
+.header .logo .logo_sub_text {
+  font-size: 16px;
+  color: #262626;
+  margin: 6px 0 0 0;
+}
+
+.header .contacts {
+  margin: 15px 0 4px 0;
+}
+
+.header .contacts .contacts_phone {
+  text-align: right;
+  font-size: 35px;
+  padding-top: 9px;
+  line-height: 40px;
+  color: #262626;
+}
+
+.header .contacts .contacts_address {
+  text-align: right;
+  font-size: 16px;
+  color: #262626;
+}
+
+.main {
+  width: 100%;
+  clear: both;
+}
+
+.main .in {
+  width: 878px;
+  background: #ffffff;
+  margin: auto;
+  min-height: 160px;
+  padding: 0 52px 0 50px;
+}
+
+.main .page_header {
+  font-size: 45px;
+}
+
+.main .page_sub_header {
+  font-size: 22px;
+}
+
+.main .page_sub_sub_header {
+  font-size: 38px;
+  margin-top: 58px;
+  margin-bottom: 30px;
+}
+
+.main .page_text {
+  min-height: 120px;
+  color: #000000;
+  font-size: 22px;
+}
+
+.main .page_text p {
+  margin: 10px 0 0;
+}
+
+.footer {
+  height: 242px;
+  width: 980px;
+  clear: both;
+  background: url("../../img/build/footer_bg.png"), #fff no-repeat;
+  margin: auto;
+}
+
+.footer .in {
+  width: 740px;
+  margin: auto;
+  background: #fff
+}

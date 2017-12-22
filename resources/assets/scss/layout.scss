@@ -91,38 +91,6 @@ a img {
   color: #262626;
 }
 
-.header .menu {
-  width: 500px;
-  float: left;
-  margin: 37px 0 0 0;
-  padding: 0;
-  clear: both;
-}
-
-.header .menu li {
-  font-size: 20px;
-  color: #262626;
-  float: left;
-  list-style: none;
-  margin-right: 53px;
-  padding-bottom: 10px;
-}
-
-.header .menu li:hover {
-  border-bottom: 3px solid #000;
-  cursor: pointer;
-}
-
-.header .menu .active {
-  border-bottom: 3px solid #000;
-  cursor: pointer;
-}
-
-.header .menu li a {
-  color: #262626;
-  text-decoration: none;
-}
-
 .header .button_area {
   width: 221px;
   height: 44px;
@@ -233,72 +201,6 @@ a img {
   width: 1000px;
 }
 
-.main.subpage .slider {
-  margin: 0 0 0 -52px;
-  position: relative;
-  width: 1000px;
-}
-
-.main .slider .img {
-}
-
-.main .slider .slider_text {
-  position: absolute;
-  color: #fefefe;
-  z-index: 100;
-  left: 52px;
-  top: 22px;
-  width: 438px;
-}
-
-.main .slider .slider_text .slider_text_header {
-  color: #fefefe;
-  font-size: 34px;
-}
-
-.main.subpage .slider .slider_text .slider_text_header {
-  color: #fefefe;
-  font-size: 34px;
-  margin: 0;
-}
-
-.main .slider .slider_text .slider_text_list {
-  margin-top: 40px;
-  padding: 0 0 0 14px;
-  font-size: 20px;
-}
-
-.main .slider .slider_text .slider_text_list li {
-  margin-bottom: 20px;
-}
-
-.main .slider .slider_text .slider_text_paragraph {
-  margin-top: 20px;
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.main .slider .slider_text .more {
-  margin-top: 30px;
-}
-
-.main .slider .slider_text .more a {
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.main .slider .overlay {
-  height: 100%;
-  background: #000;
-  position: absolute;
-  z-index: 1;
-  opacity: 0.64;
-  top: 0;
-  width: 490px;
-}
-
 .main .page_sub_sub_header {
   font-size: 38px;
   margin-top: 58px;
@@ -354,22 +256,6 @@ a img {
   margin: 10px 0 0;
 }
 
-.articles {
-}
-
-.articles .article {
-  padding: 10px 0 10px 0;
-}
-
-.articles .article h3 {
-  font-size: 20px;
-  margin: 8px 0 8px 0;
-}
-
-.articles .article h3 a {
-  color: #000;
-}
-
 .service {
   padding: 10px 0 10px 0;
   h3 {
@@ -386,36 +272,6 @@ a img {
       color: #000;
     }
   }
-}
-
-.article_page {
-}
-
-.article_page h1 {
-  padding: 10px 0 8px 0;
-  margin: 0;
-}
-
-.article_page p:last-child {
-  margin-bottom: 0;
-}
-
-.footer {
-  height: 242px;
-  width: 980px;
-  clear: both;
-  background: url("../../img/build/footer_bg.png"), #fff no-repeat;
-  margin: auto;
-}
-
-.footer .in {
-  width: 740px;
-  margin: auto;
-  background: #fff
-}
-
-.sexy {
-
 }
 
 .shadow {
