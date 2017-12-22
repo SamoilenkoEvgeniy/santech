@@ -1,5 +1,9 @@
 @extends("layouts.front")
 
+@section("title")Услуги Сантехника в Ставрополе@endsection
+
+@section("description")@endsection
+
 @section("content")
     <div class="services">
         @foreach($services as $service)

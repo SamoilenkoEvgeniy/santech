@@ -6,7 +6,6 @@
     <meta name="description" content="@yield("description")"/>
     <title>@yield("title")</title>
     <base href="{{ env("APP_URL") }}"/>
-
 </head>
 <body>
 <div class='shadow'>

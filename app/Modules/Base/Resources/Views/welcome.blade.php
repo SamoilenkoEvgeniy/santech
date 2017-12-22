@@ -1,12 +1,8 @@
 @extends("layouts.front")
 
-@section("title")
-    Сантехник в Ставрополе
-@endsection
+@section("title")Сантехник в Ставрополе@endsection
 
-@section("description")
-    Быстро. Качественно. Не дорого.
-@endsection
+@section("description")Быстро. Качественно. Не дорого.@endsection
 
 @section("content")
     <div class='page_header'>

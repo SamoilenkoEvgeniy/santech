@@ -1,12 +1,8 @@
 @extends("layouts.front")
 
-@section("title")
-    {{ $service->header }}
-@endsection
+@section("title"){{ $service->header }}@endsection
 
-@section("description")
-    {{ str_replace("\n", "", trim(strip_tags($service->preview_text))) }}
-@endsection
+@section("description"){{ str_replace("\n", "", trim(strip_tags($service->preview_text))) }}@endsection
 
 @section("content")
     <div class="service">
