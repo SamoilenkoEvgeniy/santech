@@ -20,37 +20,6 @@ a img {
   border: none;
 }
 
-#wrapper {
-  min-height: 1000px;
-  overflow: hidden;
-  margin: 0 0 -242px 0;
-  background: #fff;
-}
-
-#wrapper:after {
-  content: "";
-  display: block;
-  height: 242px;
-}
-
-.in {
-  width: 740px;
-  margin: auto;
-  position: relative;
-}
-
-.header {
-  height: 200px;
-  width: 100%;
-}
-
-.header .in {
-  width: 878px;
-  background: #ffffff;
-  margin: auto;
-  height: 180px;
-  padding: 33px 52px 0 50px;
-}
 
 .header .in a {
   text-decoration: none;
