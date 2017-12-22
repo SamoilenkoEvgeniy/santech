@@ -6,17 +6,7 @@
     <meta name="description" content="@yield("description")"/>
     <title>@yield("title")</title>
     <base href="{{ env("APP_URL") }}"/>
-    <link href='{{ url("/css/build/vendor.css") }}' rel='stylesheet' type='text/css'/>
-    <link href='{{ url("/css/build/layout.css") }}' rel='stylesheet' type='text/css'/>
-    {{--
 
-        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
-        <script type='text/javascript' src='../assets/templates/main/js/jquery.maskedinput.min.js'></script>
-        <script type='text/javascript' src='../assets/templates/main/js/owl.carousel.min.js'></script>
-        <script type='text/javascript' src='../assets/templates/main/js/run.jquery.min.js'></script>
-    --}}
-
-    <script src='{{ url("/js/build/vendor.js") }}'></script>
 </head>
 <body>
 <div class='shadow'>
@@ -67,6 +57,11 @@
         </div>
     </div>
 </div>
+
+<link href='{{ url("/css/build/vendor.css") }}' rel='stylesheet' type='text/css'/>
+<link href='{{ url("/css/build/layout.css") }}' rel='stylesheet' type='text/css'/>
+<script src='{{ url("/js/build/vendor.js") }}'></script>
+
 @if(env("APP_METRIKA", true))
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
