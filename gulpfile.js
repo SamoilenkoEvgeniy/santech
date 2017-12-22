@@ -19,9 +19,7 @@ var gulp = require('gulp'),
 
 gulp.task('css:vendor', function () {
     return gulp.src([
-        "./node_modules/bootstrap/dist/css/bootstrap.css",
-        "./node_modules/owl.carousel/dist/assets/owl.carousel.css",
-        "./node_modules/owl.carousel/dist/assets/owl.theme.default.css"
+        "./node_modules/bootstrap/dist/css/bootstrap-grid.css"
     ])
         .pipe(concat('vendor.css'))
         .pipe(csso())
@@ -32,7 +30,6 @@ gulp.task('js', function () {
     gulp.src([
         "./node_modules/jquery/dist/jquery.min.js",
         "./node_modules/jquery.maskedinput/src/jquery.maskedinput.js",
-        "./node_modules/owl.carousel/dist/owl.carousel.min.js",
         "./resources/assets/js/run.jquery.js"
     ])
         .pipe(concat('vendor.js'))
