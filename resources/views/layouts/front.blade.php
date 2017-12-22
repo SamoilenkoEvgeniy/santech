@@ -56,11 +56,11 @@
     </div>
 </div>
 
-<link href='{{ url("/css/build/vendor.css") }}' rel='stylesheet' type='text/css'/>
+<link href='{{ url("/css/build/layout.css") }}' rel='stylesheet' type='text/css'/>
 <script src='{{ url("/js/build/vendor.js") }}'></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $("head").append("<link rel='stylesheet' type='text/css' href='/css/build/layout.css' />");
+        $("head").append("<link rel='stylesheet' type='text/css' href='/css/build/vendor.css' />");
     })
 </script>
 
