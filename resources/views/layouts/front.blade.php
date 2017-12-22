@@ -61,7 +61,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $("head").append("<link rel='stylesheet' type='text/css' href='/css/build/vendor.css' />");
-//        $("head").append("<link rel='stylesheet' type='text/css' href='/css/build/layout.css' />");
+        $("head").append("<link rel='stylesheet' type='text/css' href='/css/build/layout.css' />");
     })
 </script>
 

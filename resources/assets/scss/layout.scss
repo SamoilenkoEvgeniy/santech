@@ -322,3 +322,17 @@ a img {
   }
 
 }
+
+.footer {
+  height: 242px;
+  width: 980px;
+  clear: both;
+  background: url("../../img/build/footer_bg.png"), #fff no-repeat;
+  margin: auto;
+}
+
+.footer .in {
+  width: 740px;
+  margin: auto;
+  background: #fff
+}
