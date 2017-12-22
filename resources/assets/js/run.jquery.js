@@ -23,16 +23,6 @@ function sent_form() {
 
 $(window).ready(function () {
 
-    $("#slider").owlCarousel({
-        autoPlay: 8e3,
-        navigation: !1,
-        rewindSpeed: 3e3,
-        singleItem: !0,
-        prev: "",
-        next: "",
-        pagination: !1
-    });
-
     $("#phone").mask("+7(999)999-99-99");
 
     var t = $("#order"),

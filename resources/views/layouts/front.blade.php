@@ -31,10 +31,9 @@
                             </div>
                         </div>
 
-                        <div class="col-12">
+                        <div class="col-12" style="z-index: 111;">
                             <div class="button_area">
-                                <div class="text_order" id='order'
-                                     onclick="yaCounter27173903.reachGoal('order'); return true;">
+                                <div class="text_order" id='order'>
                                     Вызов сантехника
                                 </div>
                             </div>
@@ -58,9 +57,7 @@
 </div>
 
 <link href='{{ url("/css/build/vendor.css") }}' rel='stylesheet' type='text/css'/>
-<link href='{{ url("/css/build/layout.css") }}' rel='stylesheet' type='text/css'/>
-<script src='{{ url("/js/build/vendor.js") }}' async></script>
-
+<script src='{{ url("/js/build/vendor.js") }}'></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $("head").append("<link rel='stylesheet' type='text/css' href='/css/build/layout.css' />");
