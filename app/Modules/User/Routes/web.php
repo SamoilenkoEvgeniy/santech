@@ -1,7 +1,6 @@
 <?php
 Auth::routes();
-Route::group(['prefix' => 'user'], function () {
-    Route::get('/', function () {
-        dd('This is the User module index page. Build something great!');
-    });
+Route::group(['prefix' => '/admin/crud/user', "middleware" => "auth.admin"], function () {
+    Route::get("/", "UserController@index");
+    Route::post("/update", "UserController@update");
 });

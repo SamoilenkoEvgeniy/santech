@@ -2,7 +2,7 @@
 <head>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
-    <meta name="yandex-verification" content="fef03c45191adb27"/>
+    <meta name="yandex-verification" content="{{ env("YANDEX_VERIFICATION") }}"/>
     <meta name="description" content="@yield("description")"/>
     <title>@yield("title")</title>
     <base href="{{ env("APP_URL") }}"/>
@@ -15,7 +15,7 @@
                 <div class="col-6">
                     <a href="{{ url("/") }}">
                         <div class="logo">
-                            <div class="logo_text"> Сантехник26.рф</div>
+                            <div class="logo_text">Сантехник26.рф</div>
                             <div class="logo_sub_text">Все виды сантехнических работ в Ставрополе</div>
                         </div>
                     </a>
