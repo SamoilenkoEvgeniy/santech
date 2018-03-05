@@ -2,7 +2,9 @@
 
 @section("title")Услуги Сантехника в Ставрополе@endsection
 
-@section("description")@endsection
+@section("description")
+    Качественно и не дорого.
+@endsection
 
 @section("content")
     <div class="services">
@@ -12,7 +14,7 @@
                     <a href="{{ url("/services/".$service->slug) }}">{{ $service->header }}</a>
                 </h3>
                 <div class="service_description">
-                    {{ $service->preview_text }}
+                    {!! $service->preview_text !!}
                 </div>
             </div>
         @endforeach

@@ -14,3 +14,8 @@ Route::group(['prefix' => '/admin/crud/services', "middleware" => ["auth.admin"]
     Route::post("/update", 'Crud\ServiceController@update');
     Route::get("/delete/{id}", 'Crud\ServiceController@delete');
 });
+
+Route::get('/sitemap.xml', function () {
+    $services = \App\Modules\Content\Models\Service::all();
+    return response()->view('sitemap', compact('services'))->header('Content-Type', 'text/xml');
+});
