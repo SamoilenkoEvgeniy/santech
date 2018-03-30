@@ -1,12 +1,12 @@
 <?php
 
-Route::group(['prefix' => 'services'], function () {
+Route::group(['prefix' => '{model}'], function () {
     Route::get("/", "ServiceController@index");
     Route::get("/{slug}", "ServiceController@show");
 });
 
 
-Route::group(['prefix' => '/admin/crud/services', "middleware" => ["auth.admin"]], function () {
+Route::group(['prefix' => '/admin/crud/services/{model}', "middleware" => ["auth.admin"]], function () {
     Route::get("/", 'Crud\ServiceController@index');
     Route::get("/edit/{id}", 'Crud\ServiceController@edit');
     Route::get("/create", 'Crud\ServiceController@create');
@@ -17,5 +17,6 @@ Route::group(['prefix' => '/admin/crud/services', "middleware" => ["auth.admin"]
 
 Route::get('/sitemap.xml', function () {
     $services = \App\Modules\Content\Models\Service::all();
-    return response()->view('sitemap', compact('services'))->header('Content-Type', 'text/xml');
+    $articles = \App\Modules\Content\Models\Article::all();
+    return response()->view('sitemap', compact('services', 'articles'))->header('Content-Type', 'text/xml');
 });

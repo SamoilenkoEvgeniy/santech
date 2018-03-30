@@ -11,31 +11,10 @@
     <div class='page_sub_header'>
         Выeздные работы в квартирах и частных домах
     </div>
-    {{-- <div class='page_sub_sub_header'>Самые выгодные условия</div>
-    {{--<div class='icons'>
-        <div class='item'>
-            <div class='img'><img src='/img/build/icon-clock.png' alt=''/></div>
-            <div class='text'>
-                <div class='text_header'>Оперативно</div>
-                <div class='text_sub_header'>Регаируем на заявку не более 30 минут</div>
-            </div>
-        </div>
-        <div class='item'>
-            <div class='img'><img src='/img/build/icon-like.png' alt=''/></div>
-            <div class='text'>
-                <div class='text_header'>Даем гарантию</div>
-                <div class='text_sub_header'>Гарантия на каждую выполненную работу</div>
-            </div>
-        </div>
-        <div class='item'>
-            <div class='img'><img src='/img/build/icon-money.png' alt=''/></div>
-            <div class='text'>
-                <div class='text_header'>Низкие цены</div>
-                <div class='text_sub_header'>При высоком качестве услуг</div>
-            </div>
-        </div>
-    </div>--}}
     <div class='page_text' style="margin-top: 44px;">
+        <p>
+            Меня зовут Павел, и я сантехник с опытом более 15 лет.
+        </p>
         <p>
             Мой Профессионализм и опыт гарантируют аккуратный, качественный монтаж сантехники любого
             плана. Причем, я могу выполнить объем работы добросовестно за предельно короткое время.

@@ -3,12 +3,13 @@
 @section("content")
     <div class="panel panel-default">
         <div class="panel-heading">
-            Добавить услугу
+            Добавить {{ $dictionary['what'] }}
         </div>
         <div class="panel-body">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="{{ url("/admin/crud/services/store") }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ url($base_url . '/' . $model ."/store") }}" method="post"
+                          enctype="multipart/form-data">
                         {!! csrf_field() !!}
                         <div class="form-group">
                             <label for="header">Заголовок</label>
@@ -37,7 +38,7 @@
                         </div>
 
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary">
+                            <input type="submit" class="btn btn-primary" value="Добавить"/>
                         </div>
                     </form>
                 </div>

@@ -12,6 +12,7 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public $base_url = "";
+    public $model = "";
 
     /**
      * @param $path
@@ -21,7 +22,8 @@ class Controller extends BaseController
     public function view($path, $data = [])
     {
         $data = array_merge($data, [
-            "base_url" => $this->base_url
+            "base_url" => $this->base_url,
+            "model" => $this->model,
         ]);
         return response()->view($path, $data);
     }

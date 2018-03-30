@@ -3,12 +3,13 @@
 @section("content")
     <div class="panel panel-default">
         <div class="panel-heading">
-            Редактировать услугу
+            Редактировать {{$dictionary['what']}}
         </div>
         <div class="panel-body">
             <div class="row">
                 <div class="col-md-12">
-                    <form action="{{ url("/admin/crud/services/update") }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ url($base_url . '/' . $model ."/update") }}" method="post"
+                          enctype="multipart/form-data">
                         {!! csrf_field() !!}
                         <input type="hidden" name="id" value="{{ $service->id }}"/>
                         <div class="form-group">
@@ -43,12 +44,12 @@
 
                         <div class="form-group">
                             <label for="is_publish">Опубликован</label>
-                            <input type="checkbox" name="is_publish"
-                                   {{ $service->is_publish ? "checked" : "" }} id="is_publish"/>
+                            <input type="checkbox" name="is_public"
+                                   {{ $service->is_public ? "checked" : "" }} id="is_public"/>
                         </div>
 
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary">
+                            <input type="submit" class="btn btn-primary" value="Обновить"/>
                         </div>
                     </form>
                 </div>

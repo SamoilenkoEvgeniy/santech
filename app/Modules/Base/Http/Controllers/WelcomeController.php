@@ -14,7 +14,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $services = Service::all();
+        $services = Service::where('is_public', '1')->get();
         return $this->view("base::welcome", [
             "services" => $services
         ]);
@@ -36,10 +36,6 @@ class WelcomeController extends Controller
     {
         $name = $request->input("name");
         $phone = $request->input("phone");
-        $placeholders = [
-            "name" => $name,
-            "phone" => $phone
-        ];
 
         if (env("SMS_NOTIFICATION")) {
             file_get_contents("http://sms.ru/sms/send?api_id=" . env("SMS_NOTIFICATION_TOKEN") . "&text=" . urlencode(iconv("utf-8", "utf-8", "Новая заявка {$name} {$phone}")));

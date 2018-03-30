@@ -4,21 +4,23 @@ function sent_form() {
         o = $(".modal_window"),
         s = $(".button_area"),
         n = "<div class='text_order'>Спасибо за вызов!</div>";
-    return $.ajax({
-        url: "/submitOrder",
-        type: "post",
-        data: e,
-        success: function (t) {
-            o.html(t), s.animate({
-                height: 147
-            }), setTimeout(function () {
-                s.html(n), s.css("width", "221px"), s.css("height", "44px"), s.css("box-shadow", "none"), s.css("box-shadow", "none"), s.css("background", "#01aeff")
-            }, 5e3)
-        },
-        error: function () {
-            alert("Ошибка! Сервер временно недоступен!")
-        }
-    }), !1
+    if ($('#name').val() && $('#phone').val()) {
+        return $.ajax({
+            url: "/submitOrder",
+            type: "post",
+            data: e,
+            success: function (t) {
+                o.html(t), s.animate({
+                    height: 147
+                }), setTimeout(function () {
+                    s.html(n), s.css("width", "221px"), s.css("height", "44px"), s.css("box-shadow", "none"), s.css("box-shadow", "none"), s.css("background", "#01aeff")
+                }, 5e3)
+            },
+            error: function () {
+                alert("Ошибка! Сервер временно недоступен!")
+            }
+        }), !1
+    }
 }
 
 $(window).ready(function () {
@@ -52,7 +54,7 @@ $(window).ready(function () {
             error: function () {
                 alert("Ошибка! Сервер временно недоступен!")
             }
-        })
+        });
     });
 
     $("body").delegate(".close", "click", function () {

@@ -38,7 +38,8 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     @if(\Auth::user() && \Auth::user()->hasRole("administrator"))
-                        <li><a href="{{ url('/admin/crud/services') }}">Список услуг</a></li>
+                        <li><a href="{{ url('/admin/crud/services/service') }}">Список услуг</a></li>
+                        <li><a href="{{ url('/admin/crud/services/article') }}">Список статей</a></li>
                         <li><a href="{{ url('/admin/crud/settings') }}">Настройки системы</a></li>
                     @endif
                 </ul>
