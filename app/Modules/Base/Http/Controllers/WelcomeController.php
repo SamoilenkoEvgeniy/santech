@@ -46,7 +46,7 @@ class WelcomeController extends Controller
         }
 
         if (ENV("TELEGRAM_NOTIFICATION")) {
-            file_get_contents("https://api.telegram.org/bot" . ENV("TELEGRAM_TOKEN") . "&chat_id=" . ENV('TELEGRAM_CHAT_ID') . "&text=" . urlencode("Новая заявка {$name} {$phone}"));
+            file_get_contents("https://api.telegram.org/bot" . ENV("TELEGRAM_TOKEN") . "/sendMessage?chat_id=" . ENV('TELEGRAM_CHAT_ID') . "&text=" . urlencode("Новая заявка {$name} {$phone}"));
         }
 
         return "<div class='header_modal'>Спасибо! Мы скоро свяжемся с вами!</div>";
