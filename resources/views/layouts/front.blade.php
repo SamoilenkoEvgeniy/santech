@@ -33,7 +33,7 @@
 
                         <div class="col-12" style="z-index: 111;">
                             <div class="button_area">
-                                <div class="text_order" id='order' onclick="reachGoal('order')">
+                                <div class="text_order" id='order' onclick="yaCounter27173903.reachGoal('order')">
                                     Вызов сантехника
                                 </div>
                             </div>
