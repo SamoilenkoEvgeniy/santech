@@ -15,13 +15,16 @@ class Article extends Model
         "is_public"
     ];
 
-    public function getPreview()
+    /**
+     * @return string
+     */
+    public function getPreview(): string
     {
         $path = $this->image;
         $path = pathinfo($path);
         unset($path['basename']);
         $path['filename'] .= "_preview" . "." . $path['extension'];
         unset($path['extension']);
-        return implode("/", $path);
+        return $path ? implode("/", $path) : '';
     }
 }

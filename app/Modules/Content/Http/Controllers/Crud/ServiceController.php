@@ -83,7 +83,10 @@ class ServiceController extends Controller
     {
         $data = $request->all();
         $data['is_public'] = $request->has('is_public') ? true : false;
-        $data['image'] = BaseController::storeImage($request->file("image"), 400);
+        $data['image'] = '';
+        if ($request->file("image")) {
+            $data['image'] = BaseController::storeImage($request->file("image"), 400);
+        }
         $this->instance::create($data);
         return response()->redirectTo($this->getRedirectPath());
     }
