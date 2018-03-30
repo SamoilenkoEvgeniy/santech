@@ -18,7 +18,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="slug">Заголовок</label>
+                            <label for="slug">Slug</label>
                             <input name="slug" class="form-control" id="slug" value="{{ $service->slug }}"/>
                         </div>
 

@@ -20,7 +20,7 @@
                      style="background: url('{{ $service->image  }}') no-repeat; background-size: cover">
                     <div class="overlay"></div>
                     <h3>
-                        <a href="/services/{{ $service->slug }}">{{ $service->header }}</a>
+                        <a href="/{{$model}}s/{{ $service->slug }}">{{ $service->header }}</a>
                         <p style="font-size: 18px;">
                             {!! $service->preview_text !!}
                         </p>

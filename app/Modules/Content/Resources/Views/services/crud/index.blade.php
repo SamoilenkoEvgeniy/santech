@@ -32,7 +32,9 @@
                             <div class="panel-body">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <img src="{{ url($service->image) }}" alt="alt"/>
+                                        @if ($service->image)
+                                            <img src="{{ url($service->image) }}" alt="alt"/>
+                                        @endif
                                     </div>
                                     <div class="col-md-6">
                                         {{ $service->preview_text }}
