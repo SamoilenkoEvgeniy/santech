@@ -8,7 +8,7 @@
     </url>
     @foreach($services as $service)
         <url>
-            <loc>{{env('APP_URL')}}service/{{ $service->slug }}</loc>
+            <loc>{{env('APP_URL')}}services/{{ $service->slug }}</loc>
         </url>
     @endforeach
 </urlset>
