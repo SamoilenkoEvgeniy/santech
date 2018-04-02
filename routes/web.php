@@ -1,5 +1,9 @@
 <?php
 
+Route::get("googlea0f2bd5b3a2a8e76.html", function () {
+    return 'google-site-verification: googlea0f2bd5b3a2a8e76.html';
+});
+
 Route::group([
     'namespace' => 'App\Modules\Base\Http\Controllers'
 ], function () {
