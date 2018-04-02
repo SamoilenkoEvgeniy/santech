@@ -8,7 +8,7 @@
         <div style='width: 100px; heihgt: 100px; bacground: #000;'></div>
         <div class='field_modal'>
             <div class='label'>Ваше имя</div>
-            <div class='input'><input type='text' name='name' placeholder='Как к вам обращаться?'/></div>
+            <div class='input'><input type='text' name='name' id='name' placeholder='Как к вам обращаться?'/></div>
         </div>
         <div class='field_modal'>
             <div class='label'>Ваш номер телефона</div>

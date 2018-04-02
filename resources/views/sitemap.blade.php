@@ -11,4 +11,12 @@
             <loc>{{env('APP_URL')}}services/{{ $service->slug }}</loc>
         </url>
     @endforeach
+    <url>
+        <loc>{{env('APP_URL')}}articles</loc>
+    </url>
+    @foreach($articles as $article)
+        <url>
+            <loc>{{env('APP_URL')}}articles/{{ $article->slug }}</loc>
+        </url>
+    @endforeach
 </urlset>

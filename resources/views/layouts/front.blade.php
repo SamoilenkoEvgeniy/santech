@@ -19,6 +19,14 @@
                             <div class="logo_sub_text">Все виды сантехнических работ в Ставрополе</div>
                         </div>
                     </a>
+                    <ul class="menu">
+                        <li>
+                            <a href="{{url('/services')}}">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="{{url('/articles')}}">Статьи</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-6">
                     <div class="row">
