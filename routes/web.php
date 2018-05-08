@@ -5,6 +5,24 @@ Route::get("googlea0f2bd5b3a2a8e76.html", function () {
 });
 
 Route::group([
+    'namespace' => 'App\Modules\User\Http\Controllers',
+    'prefix' => '/login',
+], function () {
+    Route::get('/', 'Auth\LoginController@showLoginForm');
+    Route::post('/', 'Auth\LoginController@login');
+});
+
+Route::group([
+    'namespace' => 'App\Modules\User\Http\Controllers',
+    'prefix' => '/admin/crud/user',
+    "middleware" => "auth.admin"
+], function () {
+    Route::get("/", "UserController@index");
+    Route::post("/update", "UserController@update");
+});
+
+
+Route::group([
     'namespace' => 'App\Modules\Base\Http\Controllers'
 ], function () {
 
