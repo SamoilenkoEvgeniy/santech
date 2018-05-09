@@ -104,8 +104,10 @@ class ServiceController extends Controller
         $data['is_public'] = $request->has('is_public') ? true : false;
         if ($request->file("image")) {
             $preview = $service->getPreview();
-            if (file_exists(public_path($service->image))) {
+            if (file_exists(public_path($service->image)) && !is_dir(public_path($service->image))) {
                 unlink(public_path($service->image));
+            }
+            if ($preview) {
                 unlink(public_path($preview));
             }
             $data['image'] = BaseController::storeImage($request->file("image"), 400);
