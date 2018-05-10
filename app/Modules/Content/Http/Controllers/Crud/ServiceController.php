@@ -107,7 +107,7 @@ class ServiceController extends Controller
             if (file_exists(public_path($service->image)) && !is_dir(public_path($service->image))) {
                 unlink(public_path($service->image));
             }
-            if ($preview) {
+            if (file_exists(public_path($preview)) && !is_dir(public_path($preview))) {
                 unlink(public_path($preview));
             }
             $data['image'] = BaseController::storeImage($request->file("image"), 400);
