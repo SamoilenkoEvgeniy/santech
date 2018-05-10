@@ -21,10 +21,12 @@
                     </a>
                     <ul class="menu">
                         <li>
-                            <a href="{{url('/services')}}">Услуги</a>
+                            <a @if(\Request::url() === url('/services')) class="active"
+                               @endif href="{{url('/services')}}">Услуги</a>
                         </li>
                         <li>
-                            <a href="{{url('/articles')}}">Статьи</a>
+                            <a @if(\Request::url() === url('/articles')) class="active"
+                               @endif href="{{url('/articles')}}">Статьи</a>
                         </li>
                     </ul>
                 </div>
